@@ -54,28 +54,24 @@
 <hr/>
 <h1>Code fencing of code snippet</h1>
 <blockquote>
-    "How to get the first image from post?"
+    "Random color generator  "
 </blockquote>
 
-<p><a href="https://stackoverflow.com/questions/21975301/how-to-get-the-first-image-from-post"> Quick link to the article of getting first image from post in wordpress</a></p>
+<p><a href="https://stackoverflow.com/questions/1484506/random-color-generator/37281143"> Quick link to the article of how To Generate a Random Color in JavaScript
+</a></p>
 
    <pre>
-    function catch_that_image() {
-        global $post, $posts;
-        $first_img = '';
-        ob_start();
-        ob_end_clean();
-        $output = preg_match_all('/<img.+?src=[\'"]([^\'"]+)[\'"].*?>/i', $post->post_content, $matches);
-        $first_img = $matches[1][0];
-      
-        if(empty($first_img)) {
-          $first_img = "/path/to/default.png";
-        }
-        return $first_img;
+    const setBg = () => {
+        const randomColor = Math.floor(Math.random()*16777215).toString(16);
+        document.body.style.backgroundColor = "#" + randomColor;
+        color.innerHTML = "#" + randomColor;
       }
+      
+      genNew.addEventListener("click", setBg);
+      setBg();
    </pre>
 
-   <p><a href="https://css-tricks.com/snippets/wordpress/get-the-first-image-from-a-post/">Code snippet url to get first image from wordpress</a></p>
+   <p><a href="https://css-tricks.com/snippets/javascript/random-hex-color/">Code snippet url to generate a Random Color in JavaScript</a></p>
 
         </body>
 </html>
